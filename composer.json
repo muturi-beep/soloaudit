@@ -1,0 +1,13 @@
+{
+  "name": "karanjamuturi/contact-form",
+  "description": "Contact form backend for CPA Karanja Muturi Njuguna",
+  "type": "project",
+  "require": {
+    "phpmailer/phpmailer": "^6.9"
+  },
+  "autoload": {
+    "psr-4": {
+      "KaranjaMuturi\\": "src/"
+    }
+  }
+}

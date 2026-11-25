@@ -1,0 +1,1639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#4b28b8" />
+  <meta name="description" content="Solomon Muturi Karanja — Audit, Accounting, Tax and Business Advisory services in Kenya." />
+  <title>Solomon Muturi Karanja | Audit · Tax · Advisory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background: #fbfafc;
+      color: #211c2d;
+      font-family: "DM Sans", sans-serif;
+      line-height: 1.3;
+      font-size: 20px;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+    :root {
+      --purple: #4b28b8;
+      --purple-deep: #2c176e;
+      --purple-soft: #eee9ff;
+      --gold: #c69a4a;
+      --gold-light: #e3c47f;
+      --muted: #716b7c;
+      --line: #e9e5ee;
+    }
+    .container {
+      width: min(1160px, calc(100% - 40px));
+      margin: auto;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: "DM Sans", sans-serif;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.3;
+    }
+    h1 {
+      font-size: 50px;
+    }
+    h2 {
+      font-size: 42px;
+    }
+    .hero h1 {
+      font-size: 50px;
+    }
+    .section h2 {
+      font-size: 42px;
+    }
+    .report-title {
+      font-size: 32px;
+      font-family: "DM Sans", sans-serif;
+      font-weight: 700;
+    }
+    .service-card h3 {
+      font-family: "DM Sans", sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+    }
+    .process-step h3 {
+      font-family: "DM Sans", sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+    }
+    .industry-row strong {
+      font-family: "DM Sans", sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+    }
+    .brand-copy strong {
+      font-family: "DM Sans", sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+    }
+    p,
+    .hero-text,
+    .about-copy p,
+    .service-card p,
+    .process-step p,
+    .contact-copy p {
+      max-width: 80ch;
+    }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, .94);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(75, 40, 184, .1);
+    }
+    .nav {
+      min-height: 86px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 8px 0;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-shrink: 0;
+    }
+    .logo-frame {
+      flex: 0 0 auto;
+      width: 80px;
+      height: 80px;
+      display: grid;
+      place-items: center;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(75, 40, 184, .08);
+      padding: 0;
+      transition: all 0.2s;
+      overflow: hidden;
+    }
+    .logo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      aspect-ratio: 1/1;
+    }
+    .brand-copy {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+      flex-shrink: 0;
+    }
+    .brand-copy strong {
+      font-weight: 700;
+      font-size: 20px;
+      color: var(--purple-deep);
+      white-space: nowrap;
+      letter-spacing: -0.01em;
+    }
+    .brand-copy small {
+      color: #71697d;
+      font-size: 10px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      margin-top: 2px;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      font-size: 14px;
+      font-weight: 700;
+      flex-shrink: 1;
+    }
+    .nav-links>a:not(.nav-cta) {
+      position: relative;
+      color: #403a49;
+      white-space: nowrap;
+    }
+    .nav-links>a:not(.nav-cta)::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      width: 0;
+      height: 2px;
+      background: var(--gold);
+      transition: .3s;
+    }
+    .nav-links>a:not(.nav-cta):hover::after {
+      width: 100%;
+    }
+    .nav-cta {
+      padding: 13px 18px;
+      border: 1px solid rgba(75, 40, 184, .25);
+      border-radius: 999px;
+      color: var(--purple) !important;
+      background: #fff;
+      box-shadow: 0 6px 18px rgba(75, 40, 184, .09);
+      transition: .28s;
+      white-space: nowrap;
+    }
+    .nav-cta:hover {
+      transform: translateY(-2px);
+      background: var(--purple);
+      color: #fff !important;
+      box-shadow: 0 12px 26px rgba(75, 40, 184, .2);
+    }
+    .menu-toggle {
+      display: none;
+      border: 0;
+      background: none;
+      padding: 9px;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+    .menu-toggle span {
+      display: block;
+      width: 25px;
+      height: 2px;
+      background: var(--purple-deep);
+      margin: 5px;
+      border-radius: 2px;
+      transition: .25s;
+    }
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background: #fff;
+      padding: 92px 0 82px;
+      border-bottom: 1px solid var(--line);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.04fr .96fr;
+      gap: 70px;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+    .hero-orb {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .orb-one {
+      width: 620px;
+      height: 620px;
+      right: -310px;
+      top: -280px;
+      background: radial-gradient(circle, rgba(75, 40, 184, .12), rgba(75, 40, 184, 0) 68%);
+    }
+    .orb-two {
+      width: 430px;
+      height: 430px;
+      left: -260px;
+      bottom: -300px;
+      background: radial-gradient(circle, rgba(198, 154, 74, .12), rgba(198, 154, 74, 0) 70%);
+    }
+    .hero-lines {
+      position: absolute;
+      right: 7%;
+      bottom: 0;
+      width: 260px;
+      height: 260px;
+      opacity: .25;
+      background: repeating-radial-gradient(ellipse at 50% 100%, transparent 0 12px, rgba(198, 154, 74, .7) 13px 14px, transparent 15px 25px);
+      transform: rotate(-15deg);
+    }
+    .brand-kicker,
+    .eyebrow {
+      font-size: 12px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: var(--purple);
+      margin: 0 0 19px;
+    }
+    .brand-kicker span {
+      display: inline-block;
+      width: 28px;
+      height: 2px;
+      background: var(--gold);
+      vertical-align: middle;
+      margin-right: 9px;
+    }
+    .hero h1 {
+      font-size: 50px;
+      margin: 0 0 25px;
+      max-width: 720px;
+      color: var(--purple-deep);
+    }
+    .hero h1 em,
+    h2 em {
+      font-style: italic;
+      color: var(--gold);
+    }
+    .hero-text {
+      max-width: 590px;
+      font-size: 20px;
+      color: var(--muted);
+      margin: 0;
+    }
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      margin-top: 32px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 22px;
+      border: 0;
+      border-radius: 999px;
+      padding: 15px 22px;
+      font-size: 14px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: .28s;
+      min-height: 50px;
+    }
+    .btn-primary {
+      background: var(--purple);
+      color: #fff;
+      box-shadow: 0 12px 27px rgba(75, 40, 184, .22);
+    }
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 18px 34px rgba(75, 40, 184, .3);
+      background: var(--purple-deep);
+    }
+    .text-link {
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--purple-deep);
+      border-bottom: 1px solid var(--gold);
+      padding-bottom: 4px;
+    }
+    .text-link span {
+      margin-left: 8px;
+      color: var(--gold);
+    }
+    .hero-trust {
+      display: flex;
+      gap: 34px;
+      margin-top: 56px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+    }
+    .hero-trust div {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+    .hero-trust b {
+      font-weight: 700;
+      font-size: 24px;
+      color: var(--gold);
+    }
+    .hero-trust span {
+      font-size: 11px;
+      line-height: 1.25;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: #7d7785;
+    }
+    .hero-visual {
+      position: relative;
+      max-width: 500px;
+      width: 100%;
+      margin: auto;
+      min-height: 470px;
+      display: grid;
+      place-items: center;
+    }
+    .report-card {
+      width: min(410px, 88%);
+      min-height: 440px;
+      border-radius: 32px;
+      background: linear-gradient(145deg, #2c176e, #4b28b8);
+      color: #fff;
+      padding: 27px 27px 20px 27px;
+      box-shadow: 0 30px 70px rgba(57, 29, 135, .25);
+      position: relative;
+      overflow: visible;
+      display: flex;
+      flex-direction: column;
+    }
+    .report-card::before {
+      content: "";
+      position: absolute;
+      width: 330px;
+      height: 330px;
+      border: 1px solid rgba(227, 196, 127, .28);
+      border-radius: 50%;
+      right: -180px;
+      top: -160px;
+    }
+    .report-card::after {
+      content: "";
+      position: absolute;
+      width: 230px;
+      height: 230px;
+      border: 1px solid rgba(255, 255, 255, .1);
+      border-radius: 50%;
+      left: -150px;
+      bottom: -130px;
+    }
+    .report-head {
+      display: flex;
+      justify-content: space-between;
+      font-size: 10px;
+      letter-spacing: .16em;
+      color: #d9cff9;
+      position: relative;
+      z-index: 5;
+      padding-left: 60px;
+      margin-top: 10px;
+    }
+    .report-title {
+      font-size: 32px;
+      font-weight: 700;
+      font-family: "DM Sans", sans-serif;
+      margin-top: 30px;
+      position: relative;
+      z-index: 5;
+      padding-left: 60px;
+    }
+    .report-title em {
+      color: var(--gold-light);
+      font-style: italic;
+    }
+    .mini-chart {
+      height: 155px;
+      margin-top: 32px;
+      border-bottom: 1px solid rgba(255, 255, 255, .2);
+      display: flex;
+      align-items: end;
+      gap: 10px;
+      padding: 0 8px 0 60px;
+      position: relative;
+      z-index: 5;
+    }
+    .mini-chart span {
+      flex: 1;
+      display: block;
+      border-radius: 5px 5px 0 0;
+      background: linear-gradient(to top, var(--gold), var(--gold-light));
+      transform-origin: bottom;
+      animation: grow 1s ease both;
+    }
+    .mini-chart span:nth-child(2) {
+      animation-delay: .08s;
+    }
+    .mini-chart span:nth-child(3) {
+      animation-delay: .16s;
+    }
+    .mini-chart span:nth-child(4) {
+      animation-delay: .24s;
+    }
+    .mini-chart span:nth-child(5) {
+      animation-delay: .32s;
+    }
+    .mini-chart span:nth-child(6) {
+      animation-delay: .4s;
+    }
+    .mini-chart span:nth-child(7) {
+      animation-delay: .48s;
+    }
+    .report-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 5;
+      padding: 16px 8px 16px 60px;
+      margin-top: 4px;
+      border-top: 1px solid rgba(255, 255, 255, .1);
+    }
+    .report-bottom small {
+      display: block;
+      color: #bfb3e9;
+      font-size: 9px;
+      letter-spacing: .15em;
+    }
+    .report-bottom strong {
+      display: block;
+      font-size: 11px;
+      margin-top: 4px;
+    }
+    .report-bottom i {
+      font-style: normal;
+      width: 35px;
+      height: 35px;
+      border: 1px solid var(--gold-light);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: var(--gold-light);
+      flex-shrink: 0;
+    }
+    .seal-ring {
+      position: absolute;
+      z-index: 3;
+      left: 2px;
+      top: 36px;
+      width: 130px;
+      height: 130px;
+      border: 2px solid rgba(198, 154, 74, .85);
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: 0 12px 30px rgba(42, 21, 100, .15);
+      display: grid;
+      place-items: center;
+      padding: 0;
+      overflow: hidden;
+    }
+    .seal-ring img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      aspect-ratio: 1/1;
+    }
+    .gold-note {
+      position: relative;
+      z-index: 4;
+      margin-top: 16px;
+      display: flex;
+      gap: 11px;
+      align-items: center;
+      background: #fff;
+      border: 1px solid #ece7df;
+      border-radius: 10px;
+      padding: 14px 17px;
+      box-shadow: 0 18px 40px rgba(40, 25, 75, .15);
+      min-width: 205px;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: 0;
+      flex-shrink: 0;
+    }
+    .gold-note>span {
+      color: var(--gold);
+      font-size: 18px;
+    }
+    .gold-note b {
+      display: block;
+      font-size: 13px;
+      color: var(--purple-deep);
+    }
+    .gold-note small {
+      display: block;
+      font-size: 10px;
+      color: #817989;
+      margin-top: 2px;
+    }
+    .trust-bar {
+      background: var(--purple-deep);
+      color: #fff;
+    }
+    .trust-inner {
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .trust-label {
+      font-size: 10px;
+      letter-spacing: .18em;
+      color: #c7bbed;
+    }
+    .trust-inner b {
+      font-weight: 600;
+      font-size: 15px;
+      color: #fff;
+      font-family: "DM Sans", sans-serif;
+    }
+    .trust-inner i {
+      height: 3px;
+      width: 3px;
+      background: var(--gold);
+      border-radius: 50%;
+    }
+    .section {
+      padding: 112px 0;
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 110px;
+    }
+    .eyebrow {
+      color: var(--gold);
+      margin-bottom: 18px;
+    }
+    .section h2 {
+      font-size: 42px;
+      margin: 0;
+      color: var(--purple-deep);
+    }
+    .gold-rule {
+      width: 48px;
+      height: 3px;
+      background: var(--gold);
+      margin-top: 27px;
+    }
+    .about-copy {
+      max-width: 650px;
+    }
+    .about-copy .lead {
+      font-weight: 600;
+      font-size: 24px;
+      font-family: "DM Sans", sans-serif;
+      color: #302a3a;
+      margin: 0 0 20px;
+    }
+    .about-copy>p:not(.lead) {
+      font-size: 20px;
+      color: var(--muted);
+    }
+    .credential {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 38px;
+      padding-top: 19px;
+      border-top: 1px solid var(--line);
+    }
+    .initial {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--purple-soft);
+      border: 1px solid rgba(75, 40, 184, .15);
+      color: var(--purple);
+      font-weight: 700;
+      font-size: 16px;
+      font-family: "DM Sans", sans-serif;
+    }
+    .credential strong {
+      display: block;
+      font-weight: 700;
+      font-size: 18px;
+      font-family: "DM Sans", sans-serif;
+      color: var(--purple-deep);
+    }
+    .credential span {
+      display: block;
+      font-size: 11px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: #817989;
+      margin-top: 4px;
+    }
+    .services {
+      background: #f4f1fb;
+    }
+    .section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 50px;
+      margin-bottom: 52px;
+    }
+    .section-heading>p {
+      max-width: 360px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    .service-card {
+      background: #fff;
+      border: 1px solid rgba(75, 40, 184, .09);
+      padding: 30px;
+      min-height: 300px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      transition: .3s;
+      box-shadow: 0 4px 15px rgba(75, 40, 184, .025);
+      border-radius: 32px;
+      color: #211c2d;
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 22px 45px rgba(75, 40, 184, .13);
+      border-color: var(--purple);
+      background: var(--purple);
+      color: #fff !important;
+    }
+    .service-card:hover h3,
+    .service-card:hover p,
+    .service-card:hover a,
+    .service-card:hover .service-number,
+    .service-card:hover .service-symbol {
+      color: #fff !important;
+    }
+    .service-card .service-number {
+      position: absolute;
+      top: 24px;
+      right: 25px;
+      font-size: 11px;
+      color: #9b93a8;
+    }
+    .service-card .service-symbol {
+      font-size: 27px;
+      color: var(--gold);
+      margin-bottom: 40px;
+    }
+    .service-card h3 {
+      font-weight: 700;
+      font-size: 24px;
+      margin: 0 0 13px;
+      color: var(--purple-deep);
+      font-family: "DM Sans", sans-serif;
+    }
+    .service-card p {
+      font-size: 18px;
+      color: #777181;
+      margin: 0 0 23px;
+    }
+    .service-card a {
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--purple);
+      margin-top: auto;
+    }
+    .service-card a span {
+      margin-left: 7px;
+    }
+    .industry-list {
+      border-top: 1px solid var(--line);
+    }
+    .industry-row {
+      display: grid;
+      grid-template-columns: 60px 1fr 1fr 30px;
+      gap: 20px;
+      align-items: center;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--line);
+      transition: .25s;
+    }
+    .industry-row:hover {
+      padding-left: 12px;
+      padding-right: 12px;
+      background: #fff;
+      box-shadow: 0 12px 28px rgba(75, 40, 184, .06);
+    }
+    .industry-row>span,
+    .industry-row>small {
+      font-size: 12px;
+      color: #8d8696;
+    }
+    .industry-row strong {
+      font-weight: 700;
+      font-size: 20px;
+      font-family: "DM Sans", sans-serif;
+      color: var(--purple-deep);
+    }
+    .industry-row b {
+      font-size: 17px;
+      color: var(--gold);
+      text-align: right;
+    }
+    .process {
+      background: var(--purple-deep);
+      color: #fff;
+    }
+    .process .eyebrow {
+      color: var(--gold-light);
+    }
+    .process h2 {
+      color: #fff;
+    }
+    .process-grid {
+      margin-top: 65px;
+      border-top: 1px solid rgba(255, 255, 255, .15);
+    }
+    .process-step {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      gap: 30px;
+      padding: 29px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, .15);
+      transition: .25s;
+    }
+    .process-step:hover {
+      padding-left: 12px;
+    }
+    .process-step>span {
+      font-weight: 700;
+      font-size: 16px;
+      font-family: "DM Sans", sans-serif;
+      color: var(--gold-light);
+    }
+    .process-step h3 {
+      margin: 0 0 5px;
+      font-weight: 700;
+      font-size: 24px;
+      font-family: "DM Sans", sans-serif;
+    }
+    .process-step p {
+      margin: 0;
+      color: #c6bed9;
+      font-size: 18px;
+      max-width: 560px;
+    }
+    .contact-section {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, #d8b66c, #c69a4a);
+      padding: 105px 0;
+      color: var(--purple-deep);
+    }
+    .contact-glow {
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      right: -280px;
+      top: -260px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, .25);
+      box-shadow: 0 0 0 80px rgba(255, 255, 255, .04), 0 0 0 160px rgba(255, 255, 255, .03);
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr .9fr;
+      gap: 95px;
+      position: relative;
+      z-index: 2;
+    }
+    .contact-section h2 {
+      font-size: 42px;
+      color: var(--purple-deep);
+    }
+    .contact-section h2 em {
+      color: #fff;
+      font-style: italic;
+    }
+    .contact-copy>p:not(.eyebrow) {
+      max-width: 500px;
+      font-size: 20px;
+    }
+    .contact-details {
+      display: grid;
+      gap: 7px;
+      margin-top: 34px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .contact-details a {
+      color: var(--purple-deep);
+      text-decoration: underline;
+    }
+    .contact-form {
+      background: #fff;
+      padding: 34px;
+      box-shadow: 0 28px 60px rgba(55, 35, 15, .2);
+      border: 1px solid rgba(255, 255, 255, .6);
+      border-radius: 32px;
+    }
+    .form-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 18px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--line);
+      font-size: 11px;
+      letter-spacing: .15em;
+      color: #817989;
+    }
+    .form-heading b {
+      color: var(--gold);
+      font-size: 16px;
+    }
+    .contact-form label {
+      display: block;
+      font-size: 11px;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      font-weight: 800;
+      margin-bottom: 16px;
+      color: #4e4659;
+    }
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+      display: block;
+      width: 100%;
+      border: 0;
+      border-bottom: 1px solid #d8d3df;
+      background: transparent;
+      padding: 9px 0 11px;
+      color: #211c2d;
+      outline: none;
+      resize: vertical;
+      font-size: 18px;
+    }
+    .contact-form input:focus,
+    .contact-form select:focus,
+    .contact-form textarea:focus {
+      border-color: var(--purple);
+    }
+    .btn-purple {
+      width: 100%;
+      background: var(--purple);
+      color: #fff;
+      box-shadow: 0 10px 22px rgba(75, 40, 184, .2);
+      border-radius: 999px;
+    }
+    .btn-purple:hover {
+      transform: translateY(-3px);
+      background: var(--purple-deep);
+      box-shadow: 0 15px 30px rgba(75, 40, 184, .3);
+    }
+    .contact-form>small {
+      display: block;
+      color: #8a8491;
+      font-size: 10px;
+      line-height: 1.5;
+      margin-top: 12px;
+    }
+    #form-status {
+      margin-top: 12px;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 8px 12px;
+      border-radius: 6px;
+    }
+    #form-status.success {
+      color: #2c176e;
+      background: rgba(44, 23, 110, 0.08);
+    }
+    #form-status.error {
+      color: #d32f2f;
+      background: rgba(211, 47, 47, 0.08);
+    }
+    footer {
+      background: #170d35;
+      color: #ded7ed;
+      padding: 62px 0 24px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+    }
+    .footer-brand p {
+      font-size: 13px;
+      color: #9990ab;
+      max-width: 260px;
+      margin-top: 18px;
+    }
+    .footer-grid>div:not(:first-child)>small {
+      display: block;
+      color: #8d84a1;
+      font-size: 10px;
+      letter-spacing: .15em;
+      margin-bottom: 11px;
+    }
+    .footer-grid>div:not(:first-child)>span,
+    .footer-grid>div:not(:first-child)>a {
+      display: block;
+      font-size: 12px;
+      color: #d2cade;
+      margin: 5px 0;
+    }
+    footer .brand-copy strong {
+      color: #fff;
+    }
+    footer .brand-copy small {
+      color: #a9a0b9;
+    }
+    footer .logo-frame {
+      padding: 0;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    footer .logo-frame img {
+      object-fit: cover;
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, .1);
+      margin-top: 52px;
+      padding-top: 19px;
+      display: flex;
+      justify-content: space-between;
+      color: #827993;
+      font-size: 10px;
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+    .delay-1 {
+      transition-delay: .1s;
+    }
+    .delay-2 {
+      transition-delay: .2s;
+    }
+    @keyframes grow {
+      from {
+        transform: scaleY(0);
+      }
+      to {
+        transform: scaleY(1);
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+      .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+      .mini-chart span {
+        animation: none;
+      }
+    }
+    @media (max-width: 850px) {
+      .container {
+        width: min(100% - 28px, 650px);
+      }
+      .nav {
+        min-height: 76px;
+        gap: 8px;
+      }
+      .logo-frame {
+        width: 68px;
+        height: 68px;
+        padding: 0;
+      }
+      .logo-frame img {
+        object-fit: cover;
+      }
+      .brand-copy strong {
+        font-size: 17px;
+      }
+      .brand-copy small {
+        font-size: 9px;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      .nav-links {
+        position: absolute;
+        left: 14px;
+        right: 14px;
+        top: 82px;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2px;
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 12px;
+        box-shadow: 0 20px 45px rgba(45, 20, 100, .16);
+        z-index: 200;
+      }
+      .nav-links.open {
+        display: flex;
+      }
+      .nav-links>a {
+        padding: 12px 10px;
+      }
+      .nav-cta {
+        text-align: center;
+        margin-top: 4px;
+      }
+      .hero {
+        padding: 65px 0 60px;
+      }
+      .hero-grid,
+      .two-col,
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 55px;
+      }
+      .hero h1 {
+        font-size: 42px;
+      }
+      .hero-visual {
+        min-height: 430px;
+      }
+      .report-card {
+        min-height: 400px;
+        padding: 22px 22px 16px 22px;
+      }
+      .seal-ring {
+        left: 0;
+        top: 18px;
+        width: 110px;
+        height: 110px;
+        padding: 0;
+      }
+      .seal-ring img {
+        object-fit: cover;
+      }
+      .gold-note {
+        margin-top: 14px;
+      }
+      .hero-trust {
+        margin-top: 40px;
+        gap: 18px;
+        justify-content: space-between;
+      }
+      .trust-inner {
+        justify-content: flex-start;
+        overflow: hidden;
+        gap: 22px;
+      }
+      .trust-label,
+      .trust-inner i {
+        display: none;
+      }
+      .trust-inner b {
+        white-space: nowrap;
+      }
+      .section {
+        padding: 82px 0;
+      }
+      .section-heading {
+        display: block;
+        margin-bottom: 38px;
+      }
+      .section-heading>p {
+        margin-top: 19px;
+      }
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+      .service-card {
+        min-height: 255px;
+      }
+      .industry-row {
+        grid-template-columns: 38px 1fr 25px;
+      }
+      .industry-row small {
+        display: none;
+      }
+      .process-grid {
+        margin-top: 42px;
+      }
+      .process-step {
+        grid-template-columns: 45px 1fr;
+        gap: 12px;
+      }
+      .contact-section {
+        padding: 75px 0;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .footer-brand {
+        grid-column: 1 / -1;
+      }
+      .report-head {
+        padding-left: 50px;
+      }
+      .report-title {
+        padding-left: 50px;
+        margin-top: 25px;
+      }
+      .mini-chart {
+        padding-left: 50px;
+      }
+      .report-bottom {
+        padding-left: 50px;
+      }
+      footer .logo-frame {
+        width: 68px;
+        height: 68px;
+      }
+    }
+    @media (max-width: 480px) {
+      .container {
+        width: calc(100% - 24px);
+      }
+      .nav {
+        min-height: 72px;
+        gap: 4px;
+      }
+      .logo-frame {
+        width: 64px;
+        height: 64px;
+        padding: 0;
+        border-radius: 10px;
+      }
+      .logo-frame img {
+        object-fit: cover;
+      }
+      .brand-copy strong {
+        font-size: 16px;
+      }
+      .brand-copy small {
+        font-size: 7px;
+        letter-spacing: .12em;
+      }
+      .nav-links {
+        top: 76px;
+      }
+      .hero {
+        padding-top: 52px;
+      }
+      .hero-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+      }
+      .btn {
+        width: 100%;
+      }
+      .hero-trust {
+        gap: 10px;
+      }
+      .hero-trust b {
+        font-size: 20px;
+      }
+      .hero-trust span {
+        font-size: 9px;
+      }
+      .hero-visual {
+        min-height: 390px;
+      }
+      .report-card {
+        width: 88%;
+        min-height: 370px;
+        padding: 22px 22px 14px 22px;
+      }
+      .report-title {
+        font-size: 28px;
+        margin-top: 20px;
+        padding-left: 45px;
+      }
+      .mini-chart {
+        height: 125px;
+        margin-top: 27px;
+        padding-left: 45px;
+      }
+      .report-bottom {
+        padding-left: 45px;
+        padding: 12px 8px 12px 45px;
+      }
+      .seal-ring {
+        width: 90px;
+        height: 90px;
+        padding: 0;
+        left: 0;
+        top: 13px;
+      }
+      .seal-ring img {
+        object-fit: cover;
+      }
+      .gold-note {
+        min-width: 175px;
+        padding: 11px 13px;
+        margin-top: 12px;
+      }
+      .gold-note small {
+        font-size: 9px;
+      }
+      .section h2 {
+        font-size: 36px;
+      }
+      .two-col {
+        gap: 34px;
+      }
+      .contact-form {
+        padding: 24px;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-brand {
+        grid-column: auto;
+      }
+      .footer-bottom {
+        display: block;
+      }
+      .footer-bottom span {
+        display: block;
+        margin: 5px 0;
+      }
+      .report-head {
+        padding-left: 45px;
+      }
+      footer .logo-frame {
+        width: 64px;
+        height: 64px;
+      }
+    }
+    @media (max-width: 360px) {
+      .logo-frame {
+        width: 58px;
+        height: 58px;
+        padding: 0;
+      }
+      .logo-frame img {
+        object-fit: cover;
+      }
+      .brand-copy strong {
+        font-size: 14px;
+      }
+      .seal-ring {
+        width: 78px;
+        height: 78px;
+        padding: 0;
+      }
+      .seal-ring img {
+        object-fit: cover;
+      }
+      footer .logo-frame {
+        width: 58px;
+        height: 58px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Solomon Muturi Karanja home">
+        <span class="logo-frame"><img src="images/logo.png" alt="Karanja Muturi CPA logo" /></span>
+        <span class="brand-copy"><strong>Solomon Muturi Karanja</strong><small>Audit · Tax · Advisory</small></span>
+      </a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#industries">Who We Serve</a>
+        <a href="#process">Process</a>
+        <a href="#contact" class="nav-cta">Book a Consultation <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-orb orb-one"></div>
+      <div class="hero-orb orb-two"></div>
+      <div class="hero-lines"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="brand-kicker"><span></span> Professional financial services · Kenya</div>
+          <h1>Clarity in your numbers.<br /><em>Confidence in your decisions.</em></h1>
+          <p class="hero-text">Audit, accounting, tax and business advisory services for individuals and businesses that value accuracy, integrity and practical financial guidance.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Book a Consultation <span>→</span></a>
+            <a class="text-link" href="#services">Explore our services <span>↓</span></a>
+          </div>
+          <div class="hero-trust">
+            <div><b>01</b><span>Integrity<br />at every step</span></div>
+            <div><b>02</b><span>Clear<br />financial insight</span></div>
+            <div><b>03</b><span>Professional<br />confidentiality</span></div>
+          </div>
+        </div>
+        <div class="hero-visual reveal delay-1">
+          <div class="seal-ring"><img src="images/logo.png" alt="Karanja Muturi CPA logo" /></div>
+          <div class="report-card">
+            <div class="report-head"><span>CLIENT FINANCIAL REVIEW</span><span>2026</span></div>
+            <div class="report-title">Financial<br /><em>clarity.</em></div>
+            <div class="mini-chart">
+              <span style="height:35%"></span><span style="height:47%"></span><span style="height:43%"></span>
+              <span style="height:62%"></span><span style="height:58%"></span><span style="height:79%"></span><span style="height:92%"></span>
+            </div>
+            <div class="report-bottom">
+              <span><small>FOCUS</small><strong>Control · Compliance · Growth</strong></span>
+              <i>✓</i>
+            </div>
+            <div class="gold-note"><span>✦</span><div><b>Trusted guidance</b><small>Professional advice, clearly explained.</small></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-bar">
+      <div class="container trust-inner">
+        <span class="trust-label">OUR STANDARD</span>
+        <b>Accuracy</b><i></i><b>Integrity</b><i></i><b>Confidentiality</b><i></i><b>Professionalism</b>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container two-col">
+        <div class="section-intro reveal">
+          <p class="eyebrow">01 · About the practice</p>
+          <h2>Professional<br /><em>by principle.</em></h2>
+          <div class="gold-rule"></div>
+        </div>
+        <div class="about-copy reveal delay-1">
+          <p class="lead">Solomon Muturi Karanja helps clients make sense of their financial information and use it with confidence.</p>
+          <p>Based in Nyahururu, we combine professional discipline with a practical, approachable service. Our work is designed to strengthen financial controls, support compliance and turn numbers into useful business insight.</p>
+          <div class="credential">
+            <div class="initial">SMK</div>
+            <div><strong>Solomon Muturi Karanja</strong><span>Certified Public Accountant · Nyahururu, Kenya</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">02 · What we do</p>
+            <h2>Expertise that makes<br /><em>business clearer.</em></h2>
+          </div>
+          <p>Focused financial support, delivered with precision and without unnecessary complexity.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card reveal"><span class="service-number">01</span><span class="service-symbol">◌</span><h3>Audit & Assurance</h3><p>Independent audits that strengthen transparency, accountability and confidence in financial information.</p><a href="#contact">Discuss an audit <span>↗</span></a></article>
+          <article class="service-card reveal delay-1"><span class="service-number">02</span><span class="service-symbol">＋</span><h3>Accounting & Bookkeeping</h3><p>Accurate, organized records that give you a dependable view of your business performance.</p><a href="#contact">Learn more <span>↗</span></a></article>
+          <article class="service-card reveal delay-2"><span class="service-number">03</span><span class="service-symbol">%</span><h3>Tax Services</h3><p>Tax compliance, preparation and advisory support to help you meet obligations with confidence.</p><a href="#contact">Discuss tax <span>↗</span></a></article>
+          <article class="service-card reveal"><span class="service-number">04</span><span class="service-symbol">↗</span><h3>Business Advisory</h3><p>Practical financial guidance that helps owners and management make better decisions.</p><a href="#contact">Get advice <span>↗</span></a></article>
+          <article class="service-card reveal delay-1"><span class="service-number">05</span><span class="service-symbol">▤</span><h3>Financial Reporting</h3><p>Clear reports that turn financial information into something you can actually use.</p><a href="#contact">Learn more <span>↗</span></a></article>
+          <article class="service-card reveal delay-2"><span class="service-number">06</span><span class="service-symbol">◇</span><h3>Internal Controls & Risk</h3><p>Identify weaknesses, reduce exposure and build stronger financial processes.</p><a href="#contact">Review controls <span>↗</span></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section industries" id="industries">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow">03 · Who we serve</p><h2>For businesses<br /><em>going somewhere.</em></h2></div>
+          <p>Professional support shaped around different sectors, sizes and stages of growth.</p>
+        </div>
+        <div class="industry-list">
+          <a href="#contact" class="industry-row reveal"><span>01</span><strong>SMEs & Entrepreneurs</strong><small>Practical finance for growing businesses</small><b>↗</b></a>
+          <a href="#contact" class="industry-row reveal delay-1"><span>02</span><strong>Corporate Businesses</strong><small>Reliable reporting and assurance</small><b>↗</b></a>
+          <a href="#contact" class="industry-row reveal delay-2"><span>03</span><strong>NGOs & Non-Profits</strong><small>Accountability and compliance</small><b>↗</b></a>
+          <a href="#contact" class="industry-row reveal"><span>04</span><strong>Professional Practices</strong><small>Law, medical, engineering and more</small><b>↗</b></a>
+          <a href="#contact" class="industry-row reveal delay-1"><span>05</span><strong>Property & Real Estate</strong><small>Developers, landlords and agencies</small><b>↗</b></a>
+          <a href="#contact" class="industry-row reveal delay-2"><span>06</span><strong>Retail & Wholesale</strong><small>Controls, records and tax support</small><b>↗</b></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process" id="process">
+      <div class="container">
+        <div class="process-intro reveal">
+          <p class="eyebrow">04 · How we work</p>
+          <h2>A straightforward process.<br /><em>No unnecessary complexity.</em></h2>
+        </div>
+        <div class="process-grid">
+          <div class="process-step reveal"><span>01</span><div><h3>Consultation</h3><p>Understand your business, objectives and engagement requirements.</p></div></div>
+          <div class="process-step reveal delay-1"><span>02</span><div><h3>Planning</h3><p>Assess the engagement and establish the right approach.</p></div></div>
+          <div class="process-step reveal delay-2"><span>03</span><div><h3>Examination</h3><p>Review records, controls, documentation and financial information.</p></div></div>
+          <div class="process-step reveal"><span>04</span><div><h3>Analysis & Reporting</h3><p>Evaluate findings and prepare clear, appropriate reports.</p></div></div>
+          <div class="process-step reveal delay-1"><span>05</span><div><h3>Recommendations</h3><p>Turn findings into practical actions for stronger performance.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-glow"></div>
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">05 · Start a conversation</p>
+          <h2>Let's make your<br /><em>numbers work harder.</em></h2>
+          <p>Tell us what you need help with and we'll discuss the most appropriate next step.</p>
+          <div class="contact-details">
+            <span>Nyahururu, Laikipia County, Kenya</span>
+            <span><a href="tel:+254714330274">0714 330 274</a> · <a href="tel:+254734922812">0734 922 812</a></span>
+            <span><a href="mailto:muturikaranja@gmail.com">muturikaranja@gmail.com</a></span>
+          </div>
+        </div>
+        <form class="contact-form reveal delay-1" id="contact-form">
+          <div class="form-heading"><span>CONSULTATION REQUEST</span><b>✦</b></div>
+          <label>Full name
+            <input required type="text" name="name" placeholder="Your name" />
+          </label>
+          <label>Company / organisation
+            <input type="text" name="company" placeholder="Business name" />
+          </label>
+          <label>Email address
+            <input required type="email" name="email" placeholder="you@example.com" />
+          </label>
+          <label>How can we help?
+            <select required name="service">
+              <option value="">Select a service</option>
+              <option>Audit & Assurance</option>
+              <option>Accounting & Bookkeeping</option>
+              <option>Tax Services</option>
+              <option>Business Advisory</option>
+              <option>Financial Reporting</option>
+              <option>Internal Controls & Risk</option>
+            </select>
+          </label>
+          <label>Message
+            <textarea rows="3" name="message" placeholder="Briefly tell us what you need..."></textarea>
+          </label>
+          <button class="btn btn-purple" type="submit" id="submit-btn">
+            Request a Consultation <span>→</span>
+          </button>
+          <div id="form-status"></div>
+          <small>Please do not send passwords, bank credentials or other sensitive financial information through this form.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#top">
+          <span class="logo-frame"><img src="images/logo.png" alt="Solomon Muturi Karanja CPA logo" /></span>
+          <span class="brand-copy"><strong>Solomon Muturi Karanja</strong><small>Audit · Tax · Advisory</small></span>
+        </a>
+        <p>Professional financial expertise with a personal approach.</p>
+      </div>
+      <div><small>LOCATION</small><span>Nyahururu, Laikipia<br />Kenya</span></div>
+      <div><small>CONTACT</small>
+        <span><a href="tel:+254714330274" style="color:#d2cade;">0714 330 274</a><br />
+        <a href="tel:+254734922812" style="color:#d2cade;">0734 922 812</a><br />
+        <a href="mailto:muturikaranja@gmail.com" style="color:#d2cade;">muturikaranja@gmail.com</a></span>
+      </div>
+      <div><small>QUICK LINKS</small><a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 Solomon Muturi Karanja. All rights reserved.</span><span>Audit · Tax · Advisory</span></div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Mobile menu toggle
+      const toggle = document.querySelector(".menu-toggle");
+      const links = document.querySelector(".nav-links");
+      if (toggle && links) {
+        toggle.addEventListener("click", function() {
+          const open = links.classList.toggle("open");
+          toggle.setAttribute("aria-expanded", String(open));
+        });
+        document.querySelectorAll(".nav-links a").forEach(function(link) {
+          link.addEventListener("click", function() {
+            links.classList.remove("open");
+            toggle.setAttribute("aria-expanded", "false");
+          });
+        });
+      }
+
+      // Scroll reveal observer
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll(".reveal").forEach(function(el) {
+        observer.observe(el);
+      });
+
+      // Contact form submission
+      const form = document.getElementById('contact-form');
+      const statusDiv = document.getElementById('form-status');
+      const submitBtn = document.getElementById('submit-btn');
+
+      if (form) {
+        form.addEventListener('submit', async function(e) {
+          e.preventDefault();
+
+          // Show loading state
+          submitBtn.disabled = true;
+          submitBtn.textContent = 'Sending...';
+          statusDiv.className = '';
+          statusDiv.innerHTML = '';
+          statusDiv.style.display = 'block';
+
+          // Collect form data
+          const formData = new FormData(form);
+          const data = Object.fromEntries(formData.entries());
+
+          // Determine API URL based on environment
+          const apiUrl = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' ?
+            '/api/contact.php' : // Local dev with PHP server
+            '/api/contact'; // Vercel production
+
+          try {
+            const response = await fetch(apiUrl, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(data)
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+              statusDiv.className = 'success';
+              statusDiv.innerHTML = '✅ ' + result.message;
+              form.reset();
+            } else {
+              let errorHtml = '';
+              if (result.errors) {
+                const errors = Object.values(result.errors);
+                errorHtml = '❌ ' + errors.join('<br>');
+              } else {
+                errorHtml = '❌ ' + (result.error || 'Something went wrong. Please try again.');
+              }
+              statusDiv.className = 'error';
+              statusDiv.innerHTML = errorHtml;
+            }
+          } catch (error) {
+            statusDiv.className = 'error';
+            statusDiv.innerHTML = '❌ Network error. Please check your connection and try again.';
+            console.error('Fetch error:', error);
+          } finally {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = 'Request a Consultation <span>→</span>';
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>
