@@ -10,14 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet" />
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    html {
-      scroll-behavior: smooth;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
     body {
       background: #fbfafc;
       color: #211c2d;
@@ -25,16 +19,8 @@
       line-height: 1.3;
       font-size: 20px;
     }
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-    button,
-    input,
-    select,
-    textarea {
-      font: inherit;
-    }
+    a { color: inherit; text-decoration: none; }
+    button, input, select, textarea { font: inherit; }
     :root {
       --purple: #4b28b8;
       --purple-deep: #2c176e;
@@ -44,64 +30,23 @@
       --muted: #716b7c;
       --line: #e9e5ee;
     }
-    .container {
-      width: min(1160px, calc(100% - 40px));
-      margin: auto;
-    }
-    h1,
-    h2,
-    h3,
-    h4 {
+    .container { width: min(1160px, calc(100% - 40px)); margin: auto; }
+    h1, h2, h3, h4 {
       font-family: "DM Sans", sans-serif;
       font-weight: 700;
       letter-spacing: -0.02em;
       line-height: 1.3;
     }
-    h1 {
-      font-size: 50px;
-    }
-    h2 {
-      font-size: 42px;
-    }
-    .hero h1 {
-      font-size: 50px;
-    }
-    .section h2 {
-      font-size: 42px;
-    }
-    .report-title {
-      font-size: 32px;
-      font-family: "DM Sans", sans-serif;
-      font-weight: 700;
-    }
-    .service-card h3 {
-      font-family: "DM Sans", sans-serif;
-      font-weight: 700;
-      font-size: 24px;
-    }
-    .process-step h3 {
-      font-family: "DM Sans", sans-serif;
-      font-weight: 700;
-      font-size: 24px;
-    }
-    .industry-row strong {
-      font-family: "DM Sans", sans-serif;
-      font-weight: 700;
-      font-size: 20px;
-    }
-    .brand-copy strong {
-      font-family: "DM Sans", sans-serif;
-      font-weight: 700;
-      font-size: 18px;
-    }
-    p,
-    .hero-text,
-    .about-copy p,
-    .service-card p,
-    .process-step p,
-    .contact-copy p {
-      max-width: 80ch;
-    }
+    h1 { font-size: 50px; }
+    h2 { font-size: 42px; }
+    .hero h1 { font-size: 50px; }
+    .section h2 { font-size: 42px; }
+    .report-title { font-size: 32px; font-family: "DM Sans", sans-serif; font-weight: 700; }
+    .service-card h3 { font-family: "DM Sans", sans-serif; font-weight: 700; font-size: 24px; }
+    .process-step h3 { font-family: "DM Sans", sans-serif; font-weight: 700; font-size: 24px; }
+    .industry-row strong { font-family: "DM Sans", sans-serif; font-weight: 700; font-size: 20px; }
+    .brand-copy strong { font-family: "DM Sans", sans-serif; font-weight: 700; font-size: 18px; }
+    p, .hero-text, .about-copy p, .service-card p, .process-step p, .contact-copy p { max-width: 80ch; }
     .site-header {
       position: sticky;
       top: 0;
@@ -118,12 +63,7 @@
       gap: 16px;
       padding: 8px 0;
     }
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      flex-shrink: 0;
-    }
+    .brand { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
     .logo-frame {
       flex: 0 0 auto;
       width: 80px;
@@ -144,12 +84,7 @@
       display: block;
       aspect-ratio: 1/1;
     }
-    .brand-copy {
-      display: flex;
-      flex-direction: column;
-      line-height: 1.2;
-      flex-shrink: 0;
-    }
+    .brand-copy { display: flex; flex-direction: column; line-height: 1.2; flex-shrink: 0; }
     .brand-copy strong {
       font-weight: 700;
       font-size: 20px;
@@ -165,19 +100,8 @@
       white-space: nowrap;
       margin-top: 2px;
     }
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 28px;
-      font-size: 14px;
-      font-weight: 700;
-      flex-shrink: 1;
-    }
-    .nav-links>a:not(.nav-cta) {
-      position: relative;
-      color: #403a49;
-      white-space: nowrap;
-    }
+    .nav-links { display: flex; align-items: center; gap: 28px; font-size: 14px; font-weight: 700; flex-shrink: 1; }
+    .nav-links>a:not(.nav-cta) { position: relative; color: #403a49; white-space: nowrap; }
     .nav-links>a:not(.nav-cta)::after {
       content: "";
       position: absolute;
@@ -188,9 +112,7 @@
       background: var(--gold);
       transition: .3s;
     }
-    .nav-links>a:not(.nav-cta):hover::after {
-      width: 100%;
-    }
+    .nav-links>a:not(.nav-cta):hover::after { width: 100%; }
     .nav-cta {
       padding: 13px 18px;
       border: 1px solid rgba(75, 40, 184, .25);
@@ -239,11 +161,7 @@
       position: relative;
       z-index: 2;
     }
-    .hero-orb {
-      position: absolute;
-      border-radius: 50%;
-      pointer-events: none;
-    }
+    .hero-orb { position: absolute; border-radius: 50%; pointer-events: none; }
     .orb-one {
       width: 620px;
       height: 620px;
@@ -268,8 +186,7 @@
       background: repeating-radial-gradient(ellipse at 50% 100%, transparent 0 12px, rgba(198, 154, 74, .7) 13px 14px, transparent 15px 25px);
       transform: rotate(-15deg);
     }
-    .brand-kicker,
-    .eyebrow {
+    .brand-kicker, .eyebrow {
       font-size: 12px;
       letter-spacing: .18em;
       text-transform: uppercase;
@@ -285,29 +202,10 @@
       vertical-align: middle;
       margin-right: 9px;
     }
-    .hero h1 {
-      font-size: 50px;
-      margin: 0 0 25px;
-      max-width: 720px;
-      color: var(--purple-deep);
-    }
-    .hero h1 em,
-    h2 em {
-      font-style: italic;
-      color: var(--gold);
-    }
-    .hero-text {
-      max-width: 590px;
-      font-size: 20px;
-      color: var(--muted);
-      margin: 0;
-    }
-    .hero-actions {
-      display: flex;
-      align-items: center;
-      gap: 26px;
-      margin-top: 32px;
-    }
+    .hero h1 { font-size: 50px; margin: 0 0 25px; max-width: 720px; color: var(--purple-deep); }
+    .hero h1 em, h2 em { font-style: italic; color: var(--gold); }
+    .hero-text { max-width: 590px; font-size: 20px; color: var(--muted); margin: 0; }
+    .hero-actions { display: flex; align-items: center; gap: 26px; margin-top: 32px; }
     .btn {
       display: inline-flex;
       align-items: center;
@@ -339,10 +237,7 @@
       border-bottom: 1px solid var(--gold);
       padding-bottom: 4px;
     }
-    .text-link span {
-      margin-left: 8px;
-      color: var(--gold);
-    }
+    .text-link span { margin-left: 8px; color: var(--gold); }
     .hero-trust {
       display: flex;
       gap: 34px;
@@ -350,16 +245,8 @@
       padding-top: 20px;
       border-top: 1px solid var(--line);
     }
-    .hero-trust div {
-      display: flex;
-      align-items: center;
-      gap: 9px;
-    }
-    .hero-trust b {
-      font-weight: 700;
-      font-size: 24px;
-      color: var(--gold);
-    }
+    .hero-trust div { display: flex; align-items: center; gap: 9px; }
+    .hero-trust b { font-weight: 700; font-size: 24px; color: var(--gold); }
     .hero-trust span {
       font-size: 11px;
       line-height: 1.25;
@@ -429,10 +316,7 @@
       z-index: 5;
       padding-left: 60px;
     }
-    .report-title em {
-      color: var(--gold-light);
-      font-style: italic;
-    }
+    .report-title em { color: var(--gold-light); font-style: italic; }
     .mini-chart {
       height: 155px;
       margin-top: 32px;
@@ -452,24 +336,12 @@
       transform-origin: bottom;
       animation: grow 1s ease both;
     }
-    .mini-chart span:nth-child(2) {
-      animation-delay: .08s;
-    }
-    .mini-chart span:nth-child(3) {
-      animation-delay: .16s;
-    }
-    .mini-chart span:nth-child(4) {
-      animation-delay: .24s;
-    }
-    .mini-chart span:nth-child(5) {
-      animation-delay: .32s;
-    }
-    .mini-chart span:nth-child(6) {
-      animation-delay: .4s;
-    }
-    .mini-chart span:nth-child(7) {
-      animation-delay: .48s;
-    }
+    .mini-chart span:nth-child(2) { animation-delay: .08s; }
+    .mini-chart span:nth-child(3) { animation-delay: .16s; }
+    .mini-chart span:nth-child(4) { animation-delay: .24s; }
+    .mini-chart span:nth-child(5) { animation-delay: .32s; }
+    .mini-chart span:nth-child(6) { animation-delay: .4s; }
+    .mini-chart span:nth-child(7) { animation-delay: .48s; }
     .report-bottom {
       display: flex;
       align-items: center;
@@ -479,17 +351,8 @@
       margin-top: 4px;
       border-top: 1px solid rgba(255, 255, 255, .1);
     }
-    .report-bottom small {
-      display: block;
-      color: #bfb3e9;
-      font-size: 9px;
-      letter-spacing: .15em;
-    }
-    .report-bottom strong {
-      display: block;
-      font-size: 11px;
-      margin-top: 4px;
-    }
+    .report-bottom small { display: block; color: #bfb3e9; font-size: 9px; letter-spacing: .15em; }
+    .report-bottom strong { display: block; font-size: 11px; margin-top: 4px; }
     .report-bottom i {
       font-style: normal;
       width: 35px;
@@ -542,25 +405,10 @@
       margin-right: 0;
       flex-shrink: 0;
     }
-    .gold-note>span {
-      color: var(--gold);
-      font-size: 18px;
-    }
-    .gold-note b {
-      display: block;
-      font-size: 13px;
-      color: var(--purple-deep);
-    }
-    .gold-note small {
-      display: block;
-      font-size: 10px;
-      color: #817989;
-      margin-top: 2px;
-    }
-    .trust-bar {
-      background: var(--purple-deep);
-      color: #fff;
-    }
+    .gold-note>span { color: var(--gold); font-size: 18px; }
+    .gold-note b { display: block; font-size: 13px; color: var(--purple-deep); }
+    .gold-note small { display: block; font-size: 10px; color: #817989; margin-top: 2px; }
+    .trust-bar { background: var(--purple-deep); color: #fff; }
     .trust-inner {
       min-height: 70px;
       display: flex;
@@ -568,49 +416,15 @@
       justify-content: space-between;
       gap: 20px;
     }
-    .trust-label {
-      font-size: 10px;
-      letter-spacing: .18em;
-      color: #c7bbed;
-    }
-    .trust-inner b {
-      font-weight: 600;
-      font-size: 15px;
-      color: #fff;
-      font-family: "DM Sans", sans-serif;
-    }
-    .trust-inner i {
-      height: 3px;
-      width: 3px;
-      background: var(--gold);
-      border-radius: 50%;
-    }
-    .section {
-      padding: 112px 0;
-    }
-    .two-col {
-      display: grid;
-      grid-template-columns: .8fr 1.2fr;
-      gap: 110px;
-    }
-    .eyebrow {
-      color: var(--gold);
-      margin-bottom: 18px;
-    }
-    .section h2 {
-      font-size: 42px;
-      margin: 0;
-      color: var(--purple-deep);
-    }
-    .gold-rule {
-      width: 48px;
-      height: 3px;
-      background: var(--gold);
-      margin-top: 27px;
-    }
-    .about-copy {
-      max-width: 650px;
-    }
+    .trust-label { font-size: 10px; letter-spacing: .18em; color: #c7bbed; }
+    .trust-inner b { font-weight: 600; font-size: 15px; color: #fff; font-family: "DM Sans", sans-serif; }
+    .trust-inner i { height: 3px; width: 3px; background: var(--gold); border-radius: 50%; }
+    .section { padding: 112px 0; }
+    .two-col { display: grid; grid-template-columns: .8fr 1.2fr; gap: 110px; }
+    .eyebrow { color: var(--gold); margin-bottom: 18px; }
+    .section h2 { font-size: 42px; margin: 0; color: var(--purple-deep); }
+    .gold-rule { width: 48px; height: 3px; background: var(--gold); margin-top: 27px; }
+    .about-copy { max-width: 650px; }
     .about-copy .lead {
       font-weight: 600;
       font-size: 24px;
@@ -618,10 +432,7 @@
       color: #302a3a;
       margin: 0 0 20px;
     }
-    .about-copy>p:not(.lead) {
-      font-size: 20px;
-      color: var(--muted);
-    }
+    .about-copy>p:not(.lead) { font-size: 20px; color: var(--muted); }
     .credential {
       display: flex;
       align-items: center;
@@ -658,9 +469,7 @@
       color: #817989;
       margin-top: 4px;
     }
-    .services {
-      background: #f4f1fb;
-    }
+    .services { background: #f4f1fb; }
     .section-heading {
       display: flex;
       align-items: end;
@@ -668,16 +477,8 @@
       gap: 50px;
       margin-bottom: 52px;
     }
-    .section-heading>p {
-      max-width: 360px;
-      color: var(--muted);
-      font-size: 18px;
-    }
-    .service-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
-    }
+    .section-heading>p { max-width: 360px; color: var(--muted); font-size: 18px; }
+    .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
     .service-card {
       background: #fff;
       border: 1px solid rgba(75, 40, 184, .09);
@@ -702,9 +503,7 @@
     .service-card:hover p,
     .service-card:hover a,
     .service-card:hover .service-number,
-    .service-card:hover .service-symbol {
-      color: #fff !important;
-    }
+    .service-card:hover .service-symbol { color: #fff !important; }
     .service-card .service-number {
       position: absolute;
       top: 24px;
@@ -712,11 +511,7 @@
       font-size: 11px;
       color: #9b93a8;
     }
-    .service-card .service-symbol {
-      font-size: 27px;
-      color: var(--gold);
-      margin-bottom: 40px;
-    }
+    .service-card .service-symbol { font-size: 27px; color: var(--gold); margin-bottom: 40px; }
     .service-card h3 {
       font-weight: 700;
       font-size: 24px;
@@ -724,23 +519,10 @@
       color: var(--purple-deep);
       font-family: "DM Sans", sans-serif;
     }
-    .service-card p {
-      font-size: 18px;
-      color: #777181;
-      margin: 0 0 23px;
-    }
-    .service-card a {
-      font-size: 14px;
-      font-weight: 800;
-      color: var(--purple);
-      margin-top: auto;
-    }
-    .service-card a span {
-      margin-left: 7px;
-    }
-    .industry-list {
-      border-top: 1px solid var(--line);
-    }
+    .service-card p { font-size: 18px; color: #777181; margin: 0 0 23px; }
+    .service-card a { font-size: 14px; font-weight: 800; color: var(--purple); margin-top: auto; }
+    .service-card a span { margin-left: 7px; }
+    .industry-list { border-top: 1px solid var(--line); }
     .industry-row {
       display: grid;
       grid-template-columns: 60px 1fr 1fr 30px;
@@ -756,36 +538,18 @@
       background: #fff;
       box-shadow: 0 12px 28px rgba(75, 40, 184, .06);
     }
-    .industry-row>span,
-    .industry-row>small {
-      font-size: 12px;
-      color: #8d8696;
-    }
+    .industry-row>span, .industry-row>small { font-size: 12px; color: #8d8696; }
     .industry-row strong {
       font-weight: 700;
       font-size: 20px;
       font-family: "DM Sans", sans-serif;
       color: var(--purple-deep);
     }
-    .industry-row b {
-      font-size: 17px;
-      color: var(--gold);
-      text-align: right;
-    }
-    .process {
-      background: var(--purple-deep);
-      color: #fff;
-    }
-    .process .eyebrow {
-      color: var(--gold-light);
-    }
-    .process h2 {
-      color: #fff;
-    }
-    .process-grid {
-      margin-top: 65px;
-      border-top: 1px solid rgba(255, 255, 255, .15);
-    }
+    .industry-row b { font-size: 17px; color: var(--gold); text-align: right; }
+    .process { background: var(--purple-deep); color: #fff; }
+    .process .eyebrow { color: var(--gold-light); }
+    .process h2 { color: #fff; }
+    .process-grid { margin-top: 65px; border-top: 1px solid rgba(255, 255, 255, .15); }
     .process-step {
       display: grid;
       grid-template-columns: 100px 1fr;
@@ -794,27 +558,15 @@
       border-bottom: 1px solid rgba(255, 255, 255, .15);
       transition: .25s;
     }
-    .process-step:hover {
-      padding-left: 12px;
-    }
+    .process-step:hover { padding-left: 12px; }
     .process-step>span {
       font-weight: 700;
       font-size: 16px;
       font-family: "DM Sans", sans-serif;
       color: var(--gold-light);
     }
-    .process-step h3 {
-      margin: 0 0 5px;
-      font-weight: 700;
-      font-size: 24px;
-      font-family: "DM Sans", sans-serif;
-    }
-    .process-step p {
-      margin: 0;
-      color: #c6bed9;
-      font-size: 18px;
-      max-width: 560px;
-    }
+    .process-step h3 { margin: 0 0 5px; font-weight: 700; font-size: 24px; font-family: "DM Sans", sans-serif; }
+    .process-step p { margin: 0; color: #c6bed9; font-size: 18px; max-width: 560px; }
     .contact-section {
       position: relative;
       overflow: hidden;
@@ -839,18 +591,9 @@
       position: relative;
       z-index: 2;
     }
-    .contact-section h2 {
-      font-size: 42px;
-      color: var(--purple-deep);
-    }
-    .contact-section h2 em {
-      color: #fff;
-      font-style: italic;
-    }
-    .contact-copy>p:not(.eyebrow) {
-      max-width: 500px;
-      font-size: 20px;
-    }
+    .contact-section h2 { font-size: 42px; color: var(--purple-deep); }
+    .contact-section h2 em { color: #fff; font-style: italic; }
+    .contact-copy>p:not(.eyebrow) { max-width: 500px; font-size: 20px; }
     .contact-details {
       display: grid;
       gap: 7px;
@@ -858,10 +601,7 @@
       font-size: 14px;
       font-weight: 700;
     }
-    .contact-details a {
-      color: var(--purple-deep);
-      text-decoration: underline;
-    }
+    .contact-details a { color: var(--purple-deep); text-decoration: underline; }
     .contact-form {
       background: #fff;
       padding: 34px;
@@ -880,10 +620,7 @@
       letter-spacing: .15em;
       color: #817989;
     }
-    .form-heading b {
-      color: var(--gold);
-      font-size: 16px;
-    }
+    .form-heading b { color: var(--gold); font-size: 16px; }
     .contact-form label {
       display: block;
       font-size: 11px;
@@ -909,9 +646,7 @@
     }
     .contact-form input:focus,
     .contact-form select:focus,
-    .contact-form textarea:focus {
-      border-color: var(--purple);
-    }
+    .contact-form textarea:focus { border-color: var(--purple); }
     .btn-purple {
       width: 100%;
       background: var(--purple);
@@ -938,30 +673,11 @@
       padding: 8px 12px;
       border-radius: 6px;
     }
-    #form-status.success {
-      color: #2c176e;
-      background: rgba(44, 23, 110, 0.08);
-    }
-    #form-status.error {
-      color: #d32f2f;
-      background: rgba(211, 47, 47, 0.08);
-    }
-    footer {
-      background: #170d35;
-      color: #ded7ed;
-      padding: 62px 0 24px;
-    }
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr;
-      gap: 40px;
-    }
-    .footer-brand p {
-      font-size: 13px;
-      color: #9990ab;
-      max-width: 260px;
-      margin-top: 18px;
-    }
+    #form-status.success { color: #2c176e; background: rgba(44, 23, 110, 0.08); }
+    #form-status.error { color: #d32f2f; background: rgba(211, 47, 47, 0.08); }
+    footer { background: #170d35; color: #ded7ed; padding: 62px 0 24px; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; }
+    .footer-brand p { font-size: 13px; color: #9990ab; max-width: 260px; margin-top: 18px; }
     .footer-grid>div:not(:first-child)>small {
       display: block;
       color: #8d84a1;
@@ -970,27 +686,11 @@
       margin-bottom: 11px;
     }
     .footer-grid>div:not(:first-child)>span,
-    .footer-grid>div:not(:first-child)>a {
-      display: block;
-      font-size: 12px;
-      color: #d2cade;
-      margin: 5px 0;
-    }
-    footer .brand-copy strong {
-      color: #fff;
-    }
-    footer .brand-copy small {
-      color: #a9a0b9;
-    }
-    footer .logo-frame {
-      padding: 0;
-      background: #fff;
-      border-radius: 12px;
-      overflow: hidden;
-    }
-    footer .logo-frame img {
-      object-fit: cover;
-    }
+    .footer-grid>div:not(:first-child)>a { display: block; font-size: 12px; color: #d2cade; margin: 5px 0; }
+    footer .brand-copy strong { color: #fff; }
+    footer .brand-copy small { color: #a9a0b9; }
+    footer .logo-frame { padding: 0; background: #fff; border-radius: 12px; overflow: hidden; }
+    footer .logo-frame img { object-fit: cover; }
     .footer-bottom {
       border-top: 1px solid rgba(255, 255, 255, .1);
       margin-top: 52px;
@@ -1000,67 +700,24 @@
       color: #827993;
       font-size: 10px;
     }
-    .reveal {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity .7s ease, transform .7s ease;
-    }
-    .reveal.visible {
-      opacity: 1;
-      transform: none;
-    }
-    .delay-1 {
-      transition-delay: .1s;
-    }
-    .delay-2 {
-      transition-delay: .2s;
-    }
-    @keyframes grow {
-      from {
-        transform: scaleY(0);
-      }
-      to {
-        transform: scaleY(1);
-      }
-    }
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+    .delay-1 { transition-delay: .1s; }
+    .delay-2 { transition-delay: .2s; }
+    @keyframes grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
     @media (prefers-reduced-motion: reduce) {
-      html {
-        scroll-behavior: auto;
-      }
-      .reveal {
-        opacity: 1;
-        transform: none;
-        transition: none;
-      }
-      .mini-chart span {
-        animation: none;
-      }
+      html { scroll-behavior: auto; }
+      .reveal { opacity: 1; transform: none; transition: none; }
+      .mini-chart span { animation: none; }
     }
     @media (max-width: 850px) {
-      .container {
-        width: min(100% - 28px, 650px);
-      }
-      .nav {
-        min-height: 76px;
-        gap: 8px;
-      }
-      .logo-frame {
-        width: 68px;
-        height: 68px;
-        padding: 0;
-      }
-      .logo-frame img {
-        object-fit: cover;
-      }
-      .brand-copy strong {
-        font-size: 17px;
-      }
-      .brand-copy small {
-        font-size: 9px;
-      }
-      .menu-toggle {
-        display: block;
-      }
+      .container { width: min(100% - 28px, 650px); }
+      .nav { min-height: 76px; gap: 8px; }
+      .logo-frame { width: 68px; height: 68px; padding: 0; }
+      .logo-frame img { object-fit: cover; }
+      .brand-copy strong { font-size: 17px; }
+      .brand-copy small { font-size: 9px; }
+      .menu-toggle { display: block; }
       .nav-links {
         position: absolute;
         left: 14px;
@@ -1077,262 +734,79 @@
         box-shadow: 0 20px 45px rgba(45, 20, 100, .16);
         z-index: 200;
       }
-      .nav-links.open {
-        display: flex;
-      }
-      .nav-links>a {
-        padding: 12px 10px;
-      }
-      .nav-cta {
-        text-align: center;
-        margin-top: 4px;
-      }
-      .hero {
-        padding: 65px 0 60px;
-      }
-      .hero-grid,
-      .two-col,
-      .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 55px;
-      }
-      .hero h1 {
-        font-size: 42px;
-      }
-      .hero-visual {
-        min-height: 430px;
-      }
-      .report-card {
-        min-height: 400px;
-        padding: 22px 22px 16px 22px;
-      }
-      .seal-ring {
-        left: 0;
-        top: 18px;
-        width: 110px;
-        height: 110px;
-        padding: 0;
-      }
-      .seal-ring img {
-        object-fit: cover;
-      }
-      .gold-note {
-        margin-top: 14px;
-      }
-      .hero-trust {
-        margin-top: 40px;
-        gap: 18px;
-        justify-content: space-between;
-      }
-      .trust-inner {
-        justify-content: flex-start;
-        overflow: hidden;
-        gap: 22px;
-      }
-      .trust-label,
-      .trust-inner i {
-        display: none;
-      }
-      .trust-inner b {
-        white-space: nowrap;
-      }
-      .section {
-        padding: 82px 0;
-      }
-      .section-heading {
-        display: block;
-        margin-bottom: 38px;
-      }
-      .section-heading>p {
-        margin-top: 19px;
-      }
-      .service-grid {
-        grid-template-columns: 1fr;
-      }
-      .service-card {
-        min-height: 255px;
-      }
-      .industry-row {
-        grid-template-columns: 38px 1fr 25px;
-      }
-      .industry-row small {
-        display: none;
-      }
-      .process-grid {
-        margin-top: 42px;
-      }
-      .process-step {
-        grid-template-columns: 45px 1fr;
-        gap: 12px;
-      }
-      .contact-section {
-        padding: 75px 0;
-      }
-      .footer-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-      .footer-brand {
-        grid-column: 1 / -1;
-      }
-      .report-head {
-        padding-left: 50px;
-      }
-      .report-title {
-        padding-left: 50px;
-        margin-top: 25px;
-      }
-      .mini-chart {
-        padding-left: 50px;
-      }
-      .report-bottom {
-        padding-left: 50px;
-      }
-      footer .logo-frame {
-        width: 68px;
-        height: 68px;
-      }
+      .nav-links.open { display: flex; }
+      .nav-links>a { padding: 12px 10px; }
+      .nav-cta { text-align: center; margin-top: 4px; }
+      .hero { padding: 65px 0 60px; }
+      .hero-grid, .two-col, .contact-grid { grid-template-columns: 1fr; gap: 55px; }
+      .hero h1 { font-size: 42px; }
+      .hero-visual { min-height: 430px; }
+      .report-card { min-height: 400px; padding: 22px 22px 16px 22px; }
+      .seal-ring { left: 0; top: 18px; width: 110px; height: 110px; padding: 0; }
+      .seal-ring img { object-fit: cover; }
+      .gold-note { margin-top: 14px; }
+      .hero-trust { margin-top: 40px; gap: 18px; justify-content: space-between; }
+      .trust-inner { justify-content: flex-start; overflow: hidden; gap: 22px; }
+      .trust-label, .trust-inner i { display: none; }
+      .trust-inner b { white-space: nowrap; }
+      .section { padding: 82px 0; }
+      .section-heading { display: block; margin-bottom: 38px; }
+      .section-heading>p { margin-top: 19px; }
+      .service-grid { grid-template-columns: 1fr; }
+      .service-card { min-height: 255px; }
+      .industry-row { grid-template-columns: 38px 1fr 25px; }
+      .industry-row small { display: none; }
+      .process-grid { margin-top: 42px; }
+      .process-step { grid-template-columns: 45px 1fr; gap: 12px; }
+      .contact-section { padding: 75px 0; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .footer-brand { grid-column: 1 / -1; }
+      .report-head { padding-left: 50px; }
+      .report-title { padding-left: 50px; margin-top: 25px; }
+      .mini-chart { padding-left: 50px; }
+      .report-bottom { padding-left: 50px; }
+      footer .logo-frame { width: 68px; height: 68px; }
     }
     @media (max-width: 480px) {
-      .container {
-        width: calc(100% - 24px);
-      }
-      .nav {
-        min-height: 72px;
-        gap: 4px;
-      }
-      .logo-frame {
-        width: 64px;
-        height: 64px;
-        padding: 0;
-        border-radius: 10px;
-      }
-      .logo-frame img {
-        object-fit: cover;
-      }
-      .brand-copy strong {
-        font-size: 16px;
-      }
-      .brand-copy small {
-        font-size: 7px;
-        letter-spacing: .12em;
-      }
-      .nav-links {
-        top: 76px;
-      }
-      .hero {
-        padding-top: 52px;
-      }
-      .hero-actions {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 18px;
-      }
-      .btn {
-        width: 100%;
-      }
-      .hero-trust {
-        gap: 10px;
-      }
-      .hero-trust b {
-        font-size: 20px;
-      }
-      .hero-trust span {
-        font-size: 9px;
-      }
-      .hero-visual {
-        min-height: 390px;
-      }
-      .report-card {
-        width: 88%;
-        min-height: 370px;
-        padding: 22px 22px 14px 22px;
-      }
-      .report-title {
-        font-size: 28px;
-        margin-top: 20px;
-        padding-left: 45px;
-      }
-      .mini-chart {
-        height: 125px;
-        margin-top: 27px;
-        padding-left: 45px;
-      }
-      .report-bottom {
-        padding-left: 45px;
-        padding: 12px 8px 12px 45px;
-      }
-      .seal-ring {
-        width: 90px;
-        height: 90px;
-        padding: 0;
-        left: 0;
-        top: 13px;
-      }
-      .seal-ring img {
-        object-fit: cover;
-      }
-      .gold-note {
-        min-width: 175px;
-        padding: 11px 13px;
-        margin-top: 12px;
-      }
-      .gold-note small {
-        font-size: 9px;
-      }
-      .section h2 {
-        font-size: 36px;
-      }
-      .two-col {
-        gap: 34px;
-      }
-      .contact-form {
-        padding: 24px;
-      }
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-      .footer-brand {
-        grid-column: auto;
-      }
-      .footer-bottom {
-        display: block;
-      }
-      .footer-bottom span {
-        display: block;
-        margin: 5px 0;
-      }
-      .report-head {
-        padding-left: 45px;
-      }
-      footer .logo-frame {
-        width: 64px;
-        height: 64px;
-      }
+      .container { width: calc(100% - 24px); }
+      .nav { min-height: 72px; gap: 4px; }
+      .logo-frame { width: 64px; height: 64px; padding: 0; border-radius: 10px; }
+      .logo-frame img { object-fit: cover; }
+      .brand-copy strong { font-size: 16px; }
+      .brand-copy small { font-size: 7px; letter-spacing: .12em; }
+      .nav-links { top: 76px; }
+      .hero { padding-top: 52px; }
+      .hero-actions { flex-direction: column; align-items: flex-start; gap: 18px; }
+      .btn { width: 100%; }
+      .hero-trust { gap: 10px; }
+      .hero-trust b { font-size: 20px; }
+      .hero-trust span { font-size: 9px; }
+      .hero-visual { min-height: 390px; }
+      .report-card { width: 88%; min-height: 370px; padding: 22px 22px 14px 22px; }
+      .report-title { font-size: 28px; margin-top: 20px; padding-left: 45px; }
+      .mini-chart { height: 125px; margin-top: 27px; padding-left: 45px; }
+      .report-bottom { padding-left: 45px; padding: 12px 8px 12px 45px; }
+      .seal-ring { width: 90px; height: 90px; padding: 0; left: 0; top: 13px; }
+      .seal-ring img { object-fit: cover; }
+      .gold-note { min-width: 175px; padding: 11px 13px; margin-top: 12px; }
+      .gold-note small { font-size: 9px; }
+      .section h2 { font-size: 36px; }
+      .two-col { gap: 34px; }
+      .contact-form { padding: 24px; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-brand { grid-column: auto; }
+      .footer-bottom { display: block; }
+      .footer-bottom span { display: block; margin: 5px 0; }
+      .report-head { padding-left: 45px; }
+      footer .logo-frame { width: 64px; height: 64px; }
     }
     @media (max-width: 360px) {
-      .logo-frame {
-        width: 58px;
-        height: 58px;
-        padding: 0;
-      }
-      .logo-frame img {
-        object-fit: cover;
-      }
-      .brand-copy strong {
-        font-size: 14px;
-      }
-      .seal-ring {
-        width: 78px;
-        height: 78px;
-        padding: 0;
-      }
-      .seal-ring img {
-        object-fit: cover;
-      }
-      footer .logo-frame {
-        width: 58px;
-        height: 58px;
-      }
+      .logo-frame { width: 58px; height: 58px; padding: 0; }
+      .logo-frame img { object-fit: cover; }
+      .brand-copy strong { font-size: 14px; }
+      .seal-ring { width: 78px; height: 78px; padding: 0; }
+      .seal-ring img { object-fit: cover; }
+      footer .logo-frame { width: 58px; height: 58px; }
     }
   </style>
 </head>
@@ -1430,12 +904,12 @@
           <p>Focused financial support, delivered with precision and without unnecessary complexity.</p>
         </div>
         <div class="service-grid">
-          <article class="service-card reveal"><span class="service-number">01</span><span class="service-symbol">◌</span><h3>Audit & Assurance</h3><p>Independent audits that strengthen transparency, accountability and confidence in financial information.</p><a href="#contact">Discuss an audit <span>↗</span></a></article>
-          <article class="service-card reveal delay-1"><span class="service-number">02</span><span class="service-symbol">＋</span><h3>Accounting & Bookkeeping</h3><p>Accurate, organized records that give you a dependable view of your business performance.</p><a href="#contact">Learn more <span>↗</span></a></article>
+          <article class="service-card reveal"><span class="service-number">01</span><span class="service-symbol">◌</span><h3>Audit &amp; Assurance</h3><p>Independent audits that strengthen transparency, accountability and confidence in financial information.</p><a href="#contact">Discuss an audit <span>↗</span></a></article>
+          <article class="service-card reveal delay-1"><span class="service-number">02</span><span class="service-symbol">＋</span><h3>Accounting &amp; Bookkeeping</h3><p>Accurate, organized records that give you a dependable view of your business performance.</p><a href="#contact">Learn more <span>↗</span></a></article>
           <article class="service-card reveal delay-2"><span class="service-number">03</span><span class="service-symbol">%</span><h3>Tax Services</h3><p>Tax compliance, preparation and advisory support to help you meet obligations with confidence.</p><a href="#contact">Discuss tax <span>↗</span></a></article>
           <article class="service-card reveal"><span class="service-number">04</span><span class="service-symbol">↗</span><h3>Business Advisory</h3><p>Practical financial guidance that helps owners and management make better decisions.</p><a href="#contact">Get advice <span>↗</span></a></article>
           <article class="service-card reveal delay-1"><span class="service-number">05</span><span class="service-symbol">▤</span><h3>Financial Reporting</h3><p>Clear reports that turn financial information into something you can actually use.</p><a href="#contact">Learn more <span>↗</span></a></article>
-          <article class="service-card reveal delay-2"><span class="service-number">06</span><span class="service-symbol">◇</span><h3>Internal Controls & Risk</h3><p>Identify weaknesses, reduce exposure and build stronger financial processes.</p><a href="#contact">Review controls <span>↗</span></a></article>
+          <article class="service-card reveal delay-2"><span class="service-number">06</span><span class="service-symbol">◇</span><h3>Internal Controls &amp; Risk</h3><p>Identify weaknesses, reduce exposure and build stronger financial processes.</p><a href="#contact">Review controls <span>↗</span></a></article>
         </div>
       </div>
     </section>
@@ -1447,12 +921,12 @@
           <p>Professional support shaped around different sectors, sizes and stages of growth.</p>
         </div>
         <div class="industry-list">
-          <a href="#contact" class="industry-row reveal"><span>01</span><strong>SMEs & Entrepreneurs</strong><small>Practical finance for growing businesses</small><b>↗</b></a>
+          <a href="#contact" class="industry-row reveal"><span>01</span><strong>SMEs &amp; Entrepreneurs</strong><small>Practical finance for growing businesses</small><b>↗</b></a>
           <a href="#contact" class="industry-row reveal delay-1"><span>02</span><strong>Corporate Businesses</strong><small>Reliable reporting and assurance</small><b>↗</b></a>
-          <a href="#contact" class="industry-row reveal delay-2"><span>03</span><strong>NGOs & Non-Profits</strong><small>Accountability and compliance</small><b>↗</b></a>
+          <a href="#contact" class="industry-row reveal delay-2"><span>03</span><strong>NGOs &amp; Non-Profits</strong><small>Accountability and compliance</small><b>↗</b></a>
           <a href="#contact" class="industry-row reveal"><span>04</span><strong>Professional Practices</strong><small>Law, medical, engineering and more</small><b>↗</b></a>
-          <a href="#contact" class="industry-row reveal delay-1"><span>05</span><strong>Property & Real Estate</strong><small>Developers, landlords and agencies</small><b>↗</b></a>
-          <a href="#contact" class="industry-row reveal delay-2"><span>06</span><strong>Retail & Wholesale</strong><small>Controls, records and tax support</small><b>↗</b></a>
+          <a href="#contact" class="industry-row reveal delay-1"><span>05</span><strong>Property &amp; Real Estate</strong><small>Developers, landlords and agencies</small><b>↗</b></a>
+          <a href="#contact" class="industry-row reveal delay-2"><span>06</span><strong>Retail &amp; Wholesale</strong><small>Controls, records and tax support</small><b>↗</b></a>
         </div>
       </div>
     </section>
@@ -1467,7 +941,7 @@
           <div class="process-step reveal"><span>01</span><div><h3>Consultation</h3><p>Understand your business, objectives and engagement requirements.</p></div></div>
           <div class="process-step reveal delay-1"><span>02</span><div><h3>Planning</h3><p>Assess the engagement and establish the right approach.</p></div></div>
           <div class="process-step reveal delay-2"><span>03</span><div><h3>Examination</h3><p>Review records, controls, documentation and financial information.</p></div></div>
-          <div class="process-step reveal"><span>04</span><div><h3>Analysis & Reporting</h3><p>Evaluate findings and prepare clear, appropriate reports.</p></div></div>
+          <div class="process-step reveal"><span>04</span><div><h3>Analysis &amp; Reporting</h3><p>Evaluate findings and prepare clear, appropriate reports.</p></div></div>
           <div class="process-step reveal delay-1"><span>05</span><div><h3>Recommendations</h3><p>Turn findings into practical actions for stronger performance.</p></div></div>
         </div>
       </div>
@@ -1482,7 +956,7 @@
           <p>Tell us what you need help with and we'll discuss the most appropriate next step.</p>
           <div class="contact-details">
             <span>Westlands, Nairobi County, Kenya</span>
-            <span><a href="tel:+254792705999">0792 705 999</a> </span>
+            <span><a href="tel:+254792705999">0792705999</a></span>
             <span><a href="mailto:muturisolomon2597@gmail.com">muturisolomon2597@gmail.com</a></span>
           </div>
         </div>
@@ -1500,12 +974,12 @@
           <label>How can we help?
             <select required name="service">
               <option value="">Select a service</option>
-              <option>Audit & Assurance</option>
-              <option>Accounting & Bookkeeping</option>
+              <option>Audit &amp; Assurance</option>
+              <option>Accounting &amp; Bookkeeping</option>
               <option>Tax Services</option>
               <option>Business Advisory</option>
               <option>Financial Reporting</option>
-              <option>Internal Controls & Risk</option>
+              <option>Internal Controls &amp; Risk</option>
             </select>
           </label>
           <label>Message
@@ -1542,7 +1016,6 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // Mobile menu toggle
       const toggle = document.querySelector(".menu-toggle");
       const links = document.querySelector(".nav-links");
       if (toggle && links) {
@@ -1558,7 +1031,6 @@
         });
       }
 
-      // Scroll reveal observer
       const observer = new IntersectionObserver(function(entries) {
         entries.forEach(function(entry) {
           if (entry.isIntersecting) {
@@ -1571,7 +1043,6 @@
         observer.observe(el);
       });
 
-      // Contact form submission
       const form = document.getElementById('contact-form');
       const statusDiv = document.getElementById('form-status');
       const submitBtn = document.getElementById('submit-btn');
@@ -1579,32 +1050,23 @@
       if (form) {
         form.addEventListener('submit', async function(e) {
           e.preventDefault();
-
-          // Show loading state
           submitBtn.disabled = true;
           submitBtn.textContent = 'Sending...';
           statusDiv.className = '';
           statusDiv.innerHTML = '';
           statusDiv.style.display = 'block';
 
-          // Collect form data
           const formData = new FormData(form);
           const data = Object.fromEntries(formData.entries());
-
-          // Determine API URL based on environment
           const apiUrl = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' ?
-            '/api/contact.php' : // Local dev with PHP server
-            '/api/contact'; // Vercel production
+            '/api/contact.php' : '/api/contact';
 
           try {
             const response = await fetch(apiUrl, {
               method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-              },
+              headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify(data)
             });
-
             const result = await response.json();
 
             if (result.success) {
@@ -1614,8 +1076,7 @@
             } else {
               let errorHtml = '';
               if (result.errors) {
-                const errors = Object.values(result.errors);
-                errorHtml = '❌ ' + errors.join('<br>');
+                errorHtml = '❌ ' + Object.values(result.errors).join('<br>');
               } else {
                 errorHtml = '❌ ' + (result.error || 'Something went wrong. Please try again.');
               }
