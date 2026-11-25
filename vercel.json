@@ -5,20 +5,10 @@
       "runtime": "vercel-php@0.9.0"
     }
   },
-  "routes": [
+  "rewrites": [
     {
-      "src": "/api/contact",
-      "dest": "/api/contact.php",
-      "methods": ["POST", "OPTIONS"]
-    },
-    {
-      "src": "/api/contact.php",
-      "dest": "/api/contact.php",
-      "methods": ["POST", "OPTIONS"]
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/api/contact",
+      "destination": "/api/contact.php"
     }
   ]
 }
